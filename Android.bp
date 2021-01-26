@@ -93,11 +93,6 @@ cc_defaults {
     header_libs: [
         "bionic_libc_platform_headers",
     ],
-    product_variables: {
-        experimental_mte: {
-            cflags: ["-DANDROID_EXPERIMENTAL_MTE"],
-        },
-    },
 }
 
 cc_library_static {
@@ -148,10 +143,5 @@ cc_test {
     header_libs: [
         "bionic_libc_platform_headers",
     ],
-    product_variables: {
-        experimental_mte: {
-            cflags: ["-DANDROID_EXPERIMENTAL_MTE"],
-        },
-    },
     test_suites: ["general-tests"],
 }
